@@ -1,0 +1,159 @@
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+html,
+body {
+
+}
+body {
+	width: 100%;
+	height: 100%;
+	perspective: 1000px;
+	transform: translate3d(0,0,0);
+	/*overflow: hidden;*/
+}
+header {
+	display: block;
+	width: 100%;
+	height: 175px;
+	background-color: #1ca29a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	box-shadow : inset 0 0 7px 0 black;
+}
+.search {
+	position: absolute;
+	right: 4px;
+	bottom: 3px;
+}
+nav {
+	float: right;
+}
+nav li{
+	display: inline-block;
+	float: left;
+	padding: 9px;
+	margin-left: 1em;
+	background-color: #94e2a9;
+	border-radius: 20em;
+	box-shadow : 0 0 7px 0 black;
+}
+.blog_logo {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+.blog_title {
+	font-family: 'Rock Salt', cursive;
+	font-size: 2em;
+	padding: 16px;
+	text-shadow: 2px 2px #fbc5c7;
+}
+.tagline {
+	font-size: 2em;
+	font-family: 'Reenie Beanie', cursive;
+}
+.content_wrapper {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	bottom: 0;	
+}
+
+.blog_container {
+	/*position: absolute;*/
+	width: 50%;
+	float: left;
+	text-align: justify;
+	overflow-y: scroll;
+	height: 100%;
+	background-color: #fdd1d3;
+	position: relative;
+	top: 175px;
+	box-shadow : inset 0 0 10px 0 black;
+	
+}
+aside {
+	/*position: absolute;*/
+	float: left;	
+	width: 25%;
+	overflow-y: hidden;
+	background-color: #4fccaf;
+	height: 100%;
+	padding-top: 180px;
+	box-shadow : inset 0 0 10px 0 black;
+}
+.blog_post_title {
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: underline;
+	text-shadow: 2px 2px #1c9288;
+}
+.blog_content {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 1.5em;
+	padding-left: 7px;
+	padding-right: 7px;
+	
+}
+img {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 35px 0 35px 0;
+	border-radius: 120px;
+}
+img:hover {
+	border-radius: 150px;
+	width: 400px;
+	height: auto;
+}
+.Date {
+	text-align: center;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 1.25em;
+}
+.single_blog_container {
+	margin-bottom: 75px;
+}
+.blogpost_table {
+	text-align: center;
+	padding: 20px;
+	font-family: 'Rock Salt', cursive;
+}
+tr, td {
+	padding: 10px 0 10px 0;
+}
+th {
+	text-align: center;
+	padding: 10px 0 10px 0;
+	text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+	aside {
+		display: none;
+	}
+	.blog_container {
+		width: 100%;
+	}
+	.search {
+		display: none;
+	}
+}
+
+
+
+
